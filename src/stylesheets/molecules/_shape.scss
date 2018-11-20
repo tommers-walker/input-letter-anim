@@ -1,0 +1,5 @@
+.shape {
+  display: inline-block;
+  width: 3rem;
+  @include svg-padding(100, 100);
+}
