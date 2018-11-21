@@ -1,7 +1,10 @@
 .btn {
   display: inline-block;
+  border: none;
+  padding: $gtr-half;
+  line-height: 1;
   background: $black;
   color: $white;
   font-family: $ff-primary;
-  border: none;
+  text-transform: uppercase;
 }

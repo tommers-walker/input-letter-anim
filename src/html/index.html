@@ -8,8 +8,13 @@
 
 {% block content %}
   <div class="container">
-    <input type="text" name="" value="" class="input" id="input">
-    <div id="mirror-input" class="mirror"></div>
+    <form class="form" id="input-form">
+      <div class="form__container">
+        <input type="text" name="input" value="" class="input" id="input" autocomplete="off" placeholder="type something">
+        <div id="mirror-input" class="mirror is-hidden"></div>
+      </div>
+      <button type="submit" name="button" class="btn">Animate!</button>
+    </form>
   </div>
 
 {% endblock %}

@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include flow;
+}
+
+.form__container {
+  position: relative;
+  white-space: nowrap;
+}
