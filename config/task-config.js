@@ -1,3 +1,5 @@
+require("@babel/polyfill");
+
 module.exports = {
   html        : true,
   images      : true,
@@ -11,7 +13,16 @@ module.exports = {
     entry: {
       // files paths are relative to
       // javascripts.dest in path-config.json
-      app: ["./app.js"]
+      app: ["@babel/polyfill", "./app.js"]
+    },
+    babel: {
+      presets: [
+        ["es2015", {
+          "targets": {
+            "ie": "10"
+          }
+        }],
+      ]
     }
   },
 
