@@ -1,11 +1,18 @@
 .btn {
   display: inline-block;
-  border: none;
+  outline: none;
+  border: rem(3) solid $black;
   padding: $gtr-half;
   line-height: 1;
-  background: $black;
+  background-color: $black;
   color: $white;
   font-family: $ff-primary;
   font-weight: 900;
   text-transform: uppercase;
+  transition: all 0.1s;
+
+  &:focus {
+    background-color: $white;
+    color: $black;
+  }
 }
